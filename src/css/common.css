@@ -10,6 +10,8 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  min-width: 1200px;
+  transition: background-color 250ms;
 }
 
 img {

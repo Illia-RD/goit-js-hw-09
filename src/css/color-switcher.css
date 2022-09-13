@@ -1,0 +1,9 @@
+.color-switcher {
+  display: flex;
+  justify-content: center;
+  margin-top: 280px;
+  column-gap: 10px;
+}
+.color-switcher_btn {
+  padding: 5px 10px;
+}
