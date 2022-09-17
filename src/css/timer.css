@@ -1,0 +1,33 @@
+.section-timer {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+.datetime-picker-wrap {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5px;
+}
+#datetime-picker {
+  width: 100%;
+}
+.timer {
+  display: flex;
+  column-gap: 5px;
+  justify-content: space-between;
+}
+
+.field span {
+  display: block;
+  text-align: center;
+}
+.field span.value {
+  font-size: 45px;
+  font-weight: bold;
+}
+.field span.label {
+  text-transform: uppercase;
+}
