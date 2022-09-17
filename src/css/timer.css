@@ -1,0 +1,60 @@
+.section-timer {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 310px;
+}
+.datetime-picker-wrap {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5px;
+}
+#datetime-picker {
+  width: 100%;
+  text-align: center;
+}
+.timer {
+  display: flex;
+  column-gap: 5px;
+  justify-content: space-between;
+}
+
+.field span {
+  display: block;
+  text-align: center;
+}
+.field span.value {
+  font-size: 45px;
+  font-weight: bold;
+}
+.field span.label {
+  text-transform: uppercase;
+}
+button {
+  border: none;
+  border-radius: 5px;
+}
+
+.start-btn {
+  background: #32c682;
+  color: #ffffff;
+}
+.start-btn:disabled {
+  background: #9ce7c6;
+}
+.stop-btn {
+  background: #ffc14d;
+  color: #ffffff;
+}
+.stop-btn:disabled {
+  background: #eddcbb;
+}
+.clear-btn {
+  background: #417fb2;
+  color: #ffffff;
+}
+.clear-btn:disabled {
+  background: #b6cee1;
+}
