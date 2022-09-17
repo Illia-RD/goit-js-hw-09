@@ -18,6 +18,7 @@ let timeLeft;
 const flatpickrOptions = {
   enableTime: true,
   time_24hr: true,
+  dateFormat: 'D d M Y H:i',
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
@@ -77,6 +78,9 @@ function addLeadingZero(value) {
 function clearTimer() {
   clearInterval(timerId);
   dateInput.disabled = false;
+  clearBtn.disabled = true;
+  startBtn.disabled = false;
+  stopBtn.disabled = true;
   timerDays.textContent = '00';
   timerHours.textContent = '00';
   timerMinutes.textContent = '00';
@@ -90,9 +94,6 @@ function stopTimer() {
   dateInput.disabled = false;
   Notiflix.Notify.info('Timer stopped');
 }
-startBtn.disabled = true;
-stopBtn.disabled = true;
-clearBtn.disabled = true;
 flatpickr(dateInput, flatpickrOptions);
 startBtn.addEventListener('click', startTimer);
 clearBtn.addEventListener('click', clearTimer);

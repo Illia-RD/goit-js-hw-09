@@ -4,7 +4,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
+  width: 310px;
 }
 .datetime-picker-wrap {
   display: flex;
@@ -13,6 +13,7 @@
 }
 #datetime-picker {
   width: 100%;
+  text-align: center;
 }
 .timer {
   display: flex;
@@ -30,4 +31,30 @@
 }
 .field span.label {
   text-transform: uppercase;
+}
+button {
+  border: none;
+  border-radius: 5px;
+}
+
+.start-btn {
+  background: #32c682;
+  color: #ffffff;
+}
+.start-btn:disabled {
+  background: #9ce7c6;
+}
+.stop-btn {
+  background: #ffc14d;
+  color: #ffffff;
+}
+.stop-btn:disabled {
+  background: #eddcbb;
+}
+.clear-btn {
+  background: #417fb2;
+  color: #ffffff;
+}
+.clear-btn:disabled {
+  background: #b6cee1;
 }
