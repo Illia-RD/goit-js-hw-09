@@ -1,12 +1,23 @@
 .color-switcher {
-  display: flex;
-  column-gap: 10px;
-  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.color-switcher_btn {
+.color-switcher__btn {
   padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+#change-bg-spead-control {
+  margin: 0, auto;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+.color-switcher_label {
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-weight: bold;
 }
